@@ -10,8 +10,16 @@ import com.google.android.gms.analytics.Tracker;
 public class Analytics {
 
 	private final Tracker tracker;
+	private static Analytics analytics;
 
-	public Analytics(Context context) {
+	 public static synchronized Analytics getInstance(final Context context) {
+		if (analytics == null) {
+			analytics = new Analytics(context);
+		}
+		return analytics;
+	}
+
+	private Analytics(Context context) {
 		tracker = GoogleAnalytics.getInstance(context).newTracker(R.xml.ga_tacker);
 	}
 

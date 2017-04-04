@@ -1,12 +1,10 @@
 package com.egecius.demo_google_analytics;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 import shared.Analytics;
 import shared.Screen;
 
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void trackScreen() {
-		new Analytics(getApplicationContext()).trackScreen(Screen.MAIN);
+		Analytics.getInstance(getApplicationContext()).trackScreen(Screen.MAIN);
 	}
 
 }
