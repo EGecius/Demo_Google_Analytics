@@ -8,30 +8,30 @@ import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
-public class Analytics {
+public class AnalyticsTracker {
 
 	private final Tracker tracker;
-	private static Analytics analytics;
+	private static AnalyticsTracker analyticsTracker;
 
-	 public static synchronized Analytics getInstance(final Context context) {
-		if (analytics == null) {
-			analytics = new Analytics(context);
+	 public static synchronized AnalyticsTracker getInstance(final Context context) {
+		if (analyticsTracker == null) {
+			analyticsTracker = new AnalyticsTracker(context);
 		}
-		return analytics;
+		return analyticsTracker;
 	}
 
-	private Analytics(Context context) {
+	private AnalyticsTracker(Context context) {
 		tracker = GoogleAnalytics.getInstance(context).newTracker(R.xml.ga_tacker);
 	}
 
 	public void trackScreen(Screen screen) {
-		Log.i("Eg:Analytics:27", "trackScreen screen " + screen);
+		Log.i("Eg:AnalyticsTracker:27", "trackScreen screen " + screen);
 		tracker.setScreenName(screen.name());
 		tracker.send(new HitBuilders.ScreenViewBuilder().build());
 	}
 
 	public void trackEvent(AnalyticsEvent event) {
-		Log.d("Eg:Analytics:34", "trackEvent event " + event);
+		Log.d("Eg:AnalyticsTracker:34", "trackEvent event " + event);
 		tracker.send(new HitBuilders.EventBuilder()
 				.setCategory("Action")
 				.setAction(event.name())

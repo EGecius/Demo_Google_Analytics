@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import shared.Analytics;
+import shared.AnalyticsTracker;
 import shared.Screen;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void trackScreen() {
-		Analytics.getInstance(getApplicationContext()).trackScreen(Screen.MAIN);
+		AnalyticsTracker.getInstance(getApplicationContext()).trackScreen(Screen.MAIN);
 	}
 
 }

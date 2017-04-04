@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import shared.Analytics;
+import shared.AnalyticsTracker;
 import shared.Screen;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -17,7 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
 	}
 
 	private void trackScreen() {
-		Analytics.getInstance(getApplicationContext()).trackScreen(Screen.SETTINGS);
+		AnalyticsTracker.getInstance(getApplicationContext()).trackScreen(Screen.SETTINGS);
 	}
 
 }
