@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "144241822043",
+    "project_id": "project-7880399348142092051"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144241822043:android:29777180953856b1",
+        "android_client_info": {
+          "package_name": "com.egecius.demo_google_analytics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDklbnYF3VpbrnNJ9kEJrf6cNdJvmaIfp4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-96697329-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
