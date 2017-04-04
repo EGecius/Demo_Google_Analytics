@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- We don't enable automatic Activity tracking -->
+    <bool name="ga_autoActivityTracking"
+          tools:ignore="UnusedResources">false</bool>
+
+    <string name="ga_trackingId"
+            tools:ignore="UnusedResources">UA-96697329-1</string>
+</resources>
