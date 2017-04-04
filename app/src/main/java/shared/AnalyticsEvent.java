@@ -4,7 +4,7 @@ package shared;
  * //todo
  */
 
-enum  AnalyticsEvent {
+public enum  AnalyticsEvent {
 
 	SUBMIT_BUTTON_CLICK
 }
