@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.egecius.demo_google_analytics.MainActivity">
 
     <TextView
-        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Activity "/>
+        android:text="Main Activity "
+        android:textSize="16sp"/>
 
     <Button
-        android:id="@+id/detail"
-        android:text="Detail"
+        android:id="@+id/detail_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Detail"/>
 
 
     <Button
-        android:id="@+id/settings"
-        android:text="Settings"
+        android:id="@+id/settings_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Settings"/>
 
 
 </LinearLayout>
