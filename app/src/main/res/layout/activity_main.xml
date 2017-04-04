@@ -7,8 +7,23 @@
     tools:context="com.egecius.demo_google_analytics.MainActivity">
 
     <TextView
+        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="Main Activity "/>
+
+    <Button
+        android:id="@+id/detail"
+        android:text="Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/settings"
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
